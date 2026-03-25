@@ -28,7 +28,7 @@ const Login = () => {
       console.log("Login Successful!")
       setIsLoggedIn(true)
       setErrors('')
-      navigate('/')
+      navigate('/dashboard')
     } catch (error) {
       setErrors('Invalid Credentials!')
       console.log("Login Error====>",error.response.data)
